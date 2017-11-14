@@ -25,8 +25,8 @@
         ],
         "scripts": [
             "../bower_components/MaterialDesignBootstrap/js/jquery-3.2.1.min.js",
-            "../bower_components/MaterialDesignBootstrap/js/bootstrap.min.js",
             "../bower_components/MaterialDesignBootstrap/js/popper.min.js",
+            "../bower_components/MaterialDesignBootstrap/js/bootstrap.min.js",
             "../bower_components/MaterialDesignBootstrap/js/mdb.js"
         ],
         "environmentSource": "environments/environment.ts",

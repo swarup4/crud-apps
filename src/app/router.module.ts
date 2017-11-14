@@ -6,8 +6,13 @@ import { SignupComponent } from './signup/signup.component';
 
 export const routes: Routes = [
     { path: 'order', component: OrderComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'signup', component: SignupComponent }
+    {
+        path: 'login',
+        component: LoginComponent,
+        children: [
+            { path: 'signup', component: SignupComponent }
+        ]
+    }
 ];
 
 export const routing = RouterModule.forRoot(routes);

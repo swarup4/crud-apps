@@ -233,8 +233,12 @@
 
 
 <div>Home Page</div>
-<a routerLink="/order">Order</a>
+<!-- <a routerLink="/order">Order</a>
 <a routerLink="/login">Login</a>
-<a routerLink="/signup">Signup</a>
+<a routerLink="/signup">Signup</a> -->
+<!-- <router-outlet></router-outlet> -->
 
-<router-outlet></router-outlet>
+<a uiSref="order" uiSrefActive="active">Order</a>
+<a uiSref="login" uiSrefActive="active">Login</a>
+<a uiSref="signup" uiSrefActive="active">Signup</a>
+<ui-view></ui-view>

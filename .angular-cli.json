@@ -19,8 +19,8 @@
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-            "../bower_components/MaterialDesignBootstrap/css/mdb.css",
             "../bower_components/MaterialDesignBootstrap/css/bootstrap.css",
+            "../bower_components/MaterialDesignBootstrap/css/mdb.css",
             "styles.css"
         ],
         "scripts": [

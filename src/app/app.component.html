@@ -1,20 +1,218 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- <app-order></app-order> -->
 
+<!--Navigation & Intro-->
+<header>
+  <!--Navbar-->
+  <nav class=" navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+      <a class="navbar-brand waves-effect waves-light" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" uiSrefActive="active">
+            <a class="nav-link waves-effect waves-light" routerLink="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item" uiSrefActive="active">
+            <a class="nav-link waves-effect waves-light" routerLink="/order">Order</a>
+          </li>
+          <!-- <li class="nav-item" uiSrefActive="active">
+            <a class="nav-link waves-effect waves-light" uiSref="login">Login</a>
+          </li> -->
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="material-icons">android</i>
+            </a>            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item waves-effect waves-light" routerLink="/login">Login</a>
+              <a class="dropdown-item waves-effect waves-light" routerLink="/signup">Sign Up</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/.Navbar-->
+
+</header>
+<!--/Navigation & Intro-->
+
+<!--Mask-->
+<!-- <div class="view hm-black-light">
+  <div class="full-bg-img flex-center pattern-4">
+    <ul>
+      <li>
+        <h1 class="h1-responsive wow fadeInUp title">
+          <strong>Hey, wanna eat something?</strong>
+        </h1>
+      </li>
+      <li>
+        <div class="row wow fadeIn" data-wow-delay="0.4s">
+          <div class="col-md-3">
+            <div class="md-form">
+              <input type="text" id="form1" class="form-control">
+              <label for="form1">Your city</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="md-form">
+              <input type="text" id="form2" class="form-control validate">
+              <label for="form2">Street</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="md-form">
+              <input type="text" id="form3" class="form-control validate">
+              <label for="form3">House</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="md-form">
+              <button class="btn btn-lg btn-danger">Order</button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="payment">
+        <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+      </li>
+    </ul>
+  </div>
+</div> -->
+<!--/.Mask-->
+
+<!-- <ui-view></ui-view> -->
+<router-outlet></router-outlet>
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only nopadding ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 ml-auto">
+        <h5 class="title mb-3">
+          <strong>About material design</strong>
+        </h5>
+        <p>Material Design (codenamed Quantum Paper) is a design language developed by Google.</p>
+        <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework
+          - Bootstrap.</p>
+      </div>
+      <hr class="w-100 clearfix d-sm-none">
+      <div class="col-lg-2 col-md-6 ml-auto">
+        <h5 class="title mb-3">
+          <strong>First column</strong>
+        </h5>
+        <ul>
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="w-100 clearfix d-sm-none">
+      <div class="col-lg-2 col-md-6 ml-auto">
+        <h5 class="title mb-3">
+          <strong>Second column</strong>
+        </h5>
+        <ul>
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="w-100 clearfix d-sm-none">
+      <div class="col-lg-2 col-md-6 ml-auto">
+        <h5 class="title mb-3">
+          <strong>Third column</strong>
+        </h5>
+        <ul>
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="call-to-action">
+    <h4 class="mb-5">Material Design for Bootstrap</h4>
+    <ul>
+      <li>
+        <h5>Get our UI KIT for free</h5>
+      </li>
+      <li>
+        <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary" rel="nofollow">Sign up!</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info" rel="nofollow">Learn more</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container-fluid">
+      © 2015 Copyright:
+      <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+    </div>
+  </div>
+
+</footer>
+<!--/.Footer-->
+
+<!-- <a routerLink="/order">Order</a>
+<a routerLink="/login">Login</a>
+<a routerLink="/signup">Signup</a> -->

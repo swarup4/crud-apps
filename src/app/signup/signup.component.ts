@@ -7,10 +7,10 @@ import { SignupService } from './signup.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  pageName = 'Sign Up Page';
 
-  constructor() { }
-
+  constructor(private signupService: SignupService) { }
+  signupService.getServiceValue();
   ngOnInit() {
   }
-
 }

@@ -8,9 +8,17 @@ import { SignupService } from './signup.service';
 })
 export class SignupComponent implements OnInit {
   pageName = 'Sign Up Page';
+  constValue;
+  arrayData;
 
   constructor(private signupService: SignupService) { }
-  signupService.getServiceValue();
-  ngOnInit() {
+
+  getServiceData(){
+    console.log(this.signupService.obj)
+    this.arrayData = this.signupService.obj;
+  }
+
+  ngOnInit() { 
+    this.constValue = this.signupService.getServiceValue();
   }
 }

@@ -7,8 +7,16 @@ export class SignupService {
   // constructor(private http: Http) { }
   constructor() { }
 
+  obj = [{
+    empId: "17112",
+    name: "Swarup"
+  }, {
+    empId: "466359",
+    name: "Swaroop"
+  }];
+  
   getServiceValue() {
-    console.log('Hello');
+    return "My Name is Swarup";
   }
 
 }

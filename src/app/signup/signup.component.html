@@ -1,6 +1,23 @@
 <div>{{pageName}}</div>
-{{constValue}} <br>
+{{constValue}}
+<br> {{authValue}} <br>
+
 <ul>
   <li *ngFor="let arr of arrayData">{{ arr.empId }} {{ arr.name }}</li>
 </ul>
-<button type="button" class="btn btn-default" (click)="getServiceData()">Primary</button>
+<button type="button" class="btn btn-default" (click)="getServiceData()">Service Data</button>
+<button type="button" class="btn btn-primary" (click)="getJsonData()">Json Data</button>
+<button type="button" class="btn btn-primary" (click)="getAuthTokenData()">Auth Token</button>
+<div class="col-sm-6">
+  <input type="search" placeholder="Search" [(ngModel)]="searchKey" (keyup)="getSearchData(searchKey)" />
+</div>
+<div class="col-sm-6">
+  <ul>
+    <li *ngFor="let track of searchData">
+      <img src="{{track.artworkUrl100}}">
+      <a target="_blank" href="{{track.trackViewUrl}}">{{ track.trackName }}
+      </a>
+    </li>
+  </ul>
+</div>
+<br>
